@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>inline속성요소</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+                margin-bottom: 10px;
+            }
+            body {
+                color: #888;
+            }
+            h1 {
+                font-size: 48px;
+                width: 40%;
+                margin: 50px auto;
+                border: solid #bbb;
+                text-align: center;
+                padding: 20px 0;
+            }
+            .container {
+                width: 80%;
+                border: 1px solid #bbb;
+                margin: 0 auto 50px;
+                padding: 50px 0 50px 50px;
+                box-sizing: border-box;
+            }
+            .container img {
+                width: 200px;
+                height: 200px;
+                display: block;
+            }
+            h2 {
+                font-size: 32px;
+                margin-bottom: 30px;
+            }
+            h2 span {
+                color: orange;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+            mark {
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <h1>inline속성요소</h1>
+            <div class="container">
+                <h2><span>01.</span>inline속성의 특징</h2>
+                <ul>
+                    <li>인라인 속성은 줄바꿈이 일어나지 않고, 다른요소와...</li>
+                    <li>width, height...</li>
+                    <li>padding은 상하좌우...</li>
+                    <li>displat속성으로...</li>
+                </ul>
+            </div>
+            <div class="container">
+                <h2><span>02.</span>inline요소의 종류</h2>
+                <p>a, img, span...</p>
+            </div>
+            <div class="container">
+                <h2><span>03.</span>inline속성 특성 적용하기</h2>
+                <img src="./image/토토로_1920x1080 01.jpg" alt="" />
+                <a href="http://www.google.com">구글로 바로가기</a>
+                span태그는 아무런 의미가 없으나, <i>영억을 묶거나,</i> <b>특정부분에 스타일</b>을 적용하기 위해 아주많이
+                사용 <mark>형광색글자</mark>
+            </div>
+        </div>
+    </body>
+</html>
