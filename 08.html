@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>프로필이미지</title>
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            li {
+                list-style: none;
+            }
+            body {
+                font-family: 'Montserrat', sans-serif;
+                font-family: 'Noto Sans', serif;
+            }
+            .title {
+                font-family: 'Anton', sans-serif;
+            }
+            .photo {
+                background: #000;
+                width: 650px;
+                margin: 100px auto;
+                margin: 100px auto;
+                padding: 100px 0;
+                position: relative;
+                border-radius: 30px;
+            }
+            .photo p.img {
+                width: 350px;
+                height: 350px;
+                border-radius: 50%;
+                background: yellow;
+                margin: auto;
+                overflow: hidden;
+            }
+            .photo p.img img {
+                width: 100%;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            .photo .title {
+                position: absolute;
+                color: #00f292;
+                font-size: 68px;
+                left: 5%;
+                top: 25%;
+                line-height: 1.3;
+                text-transform: uppercase;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            .photo .bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: 20px auto 0;
+                align-items: flex-end;
+            }
+            .photo .bottom .about {
+                font-size: 15px;
+                color: #00f292;
+                letter-spacing: -1px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .photo .bottom .about li {
+                position: relative;
+                padding-left: 15px;
+                margin-bottom: 5px;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            .photo .bottom .about li:before {
+                content: '';
+                position: absolute;
+                width: 5px;
+                height: 2px;
+                background: #00f292;
+                left: 0;
+                top: 45%;
+            }
+            .photo .bottom .arrow {
+                width: 40px;
+                height: 40px;
+                bottom: 1px;
+                border: 1px solid #00f292;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+            .photo .bottom .arrow span {
+                font-size: 20px;
+                color: #00f292;
+                transition: all 0.5s;
+                cursor: pointer;
+            }
+
+            /* hover 효과 */
+            .photo p.img:hover img {
+                transform: scale(1.05);
+            }
+            .photo .title:hover {
+                color: #fff;
+            }
+            .photo .bottom .about li:hover {
+                color: #fff;
+            }
+            .photo .bottom .arrow:hover {
+                border: 1px solid #fff;
+            }
+            .photo .bottom .arrow:hover span {
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="photo">
+                <p class="img">
+                    <img src="image/myphoto.png" alt="" />
+                </p>
+                <h2 class="title">
+                    J.young's <br />
+                    portfolio
+                </h2>
+                <div class="bottom">
+                    <ul class="about">
+                        <li>Name : J.young</li>
+                        <li>H.P : 010-1234-6789</li>
+                        <li>Mail : jjjh523@nate.com</li>
+                        <li>Youtube: 잘난웹디</li>
+                    </ul>
+                    <p class="arrow">
+                        <span class="lnr lnr-chevron-right"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

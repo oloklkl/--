@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>position</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: 'Rock Salt', cursive;
+            }
+            .banner {
+                width: 250px;
+                height: 350px;
+                background: #ddd;
+                margin: 150px;
+                border-radius: 20px;
+                line-height: 1.4;
+                padding-top: 150px;
+                position: relative;
+                overflow: hidden;
+            }
+            h2 {
+                font-size: 62px;
+                -webkit-text-stroke: 1px #000;
+                color: transparent;
+                transform: rotate(-15deg) translateX(-10px);
+                text-align: center;
+                position: relative;
+                z-index: 2;
+            }
+            h2 b {
+                color: #000;
+                font-weight: normal;
+                display: block;
+            }
+            span {
+                position: absolute;
+            }
+            .img_01 {
+                left: 7%;
+                top: 8%;
+            }
+            .img_02 {
+                right: -54%;
+                bottom: -14%;
+                z-index: 1;
+            }
+            .img_03 {
+                right: 11%;
+                top: 28%;
+            }
+            .img_04 {
+                right: 49%;
+                top: 29%;
+            }
+            .img_05 {
+                left: 10%;
+                bottom: 26%;
+                transform: rotate(166deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="banner">
+                <h2>keep<b>Smile</b></h2>
+                <span class="img_01"><img src="image/small-smile.png" alt="" /></span>
+                <span class="img_02"><img src="image/large-smile.png" alt="" /></span>
+                <span class="img_03"><img src="image/deco_1.png" alt="" /></span>
+                <span class="img_04"><img src="image/heart.png" alt="" /></span>
+                <span class="img_05"><img src="image/deco_1.png" alt="" /></span>
+            </div>
+        </div>
+    </body>
+</html>
